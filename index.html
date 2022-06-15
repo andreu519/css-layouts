@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #fefefe;
+      }
+
+      main {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: row;
+        
+      }
+
+      .red {
+        background-color:rgb(236, 136, 29);
+        padding: 2em;
+        height: 80%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+      .red h2 {
+        font-size: 20px;
+        font-weight: 400px;
+        font-family:Arial, Helvetica, sans-serif;
+        padding-bottom: 10px;
+        padding-top: 50px;
+        color: white;
+      }
+
+      .red p {
+        font-size: 15px;
+        font-weight: 400px;
+        font-family:Arial, Helvetica, sans-serif;
+        padding-bottom: 10px;
+        padding-top: 85px;
+        color: whitesmoke;
+      }
+
+      .gold {
+        background-color:rgb(3, 133, 143);
+        padding: 2em;
+        height: 80%;
+      }
+      .gold h2 {
+        font-size: 20px;
+        font-weight: 400px;
+        font-family:Arial, Helvetica, sans-serif;
+        padding-bottom: 10px;
+        padding-top: 50px;
+        color: white;
+      }
+
+      .gold p {
+        font-size: 15px;
+        font-weight: 400px;
+        font-family:Arial, Helvetica, sans-serif;
+        padding-bottom: 5px;
+        padding-top: 85px;
+        color: whitesmoke;
+        text-align: justify;
+      }
+
+      .green {
+        background-color:rgb(1, 48, 47);
+        padding: 2em;
+        height: 80%;
+        border-bottom-right-radius:15px;
+        border-top-right-radius: 15px;
+        
+      }
+
+      .green h2 {
+        font-size: 20px;
+        font-weight: 400px;
+        font-family:Arial, Helvetica, sans-serif;
+        padding-bottom: 10px;
+        padding-top: 50px;
+        color: whitesmoke;
+      }
+
+      .green p {
+        font-size: 15px;
+        font-weight: 400px;
+        font-family:Arial, Helvetica, sans-serif;
+        padding-bottom: 10px;
+        padding-top: 85px;
+        color: whitesmoke;
+      }
+.b1{
+  background-color: white;
+  border-radius: 15px;
+  color: rgb(236, 136, 29);
+  padding: 10px 25px ;
+  text-align: center;
+  justify-content: center;
+  display:block;
+  font-size: 12px;
+  margin: 50px;
+  border-style: hidden;
+  
+}
+
+.b2{
+  background-color: white;
+  border-radius: 15px;
+  color: rgb(3, 133, 143);
+  padding: 10px 25px ;
+  text-align: center;
+  justify-content: center;
+  display:block;
+  font-size: 12px;
+  margin: 50px;
+  border-style: hidden;
+}
+.b3{
+  background-color: white;
+  border-radius: 15px;
+  color:rgb(1, 48, 47);
+  padding: 10px 25px ;
+  text-align: center;
+  justify-content: center;
+  display:block;
+  font-size: 12px;
+  margin: 50px;
+  border-style: hidden;
+}
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="red"> 
+          <img src="images/icon-sedans.svg">
+        <h2>SEDANS</h2>
+        <p>
+          Choose a Sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <button class="b1">Learn More</button>
+      </div>
+      <div class="gold">
+      <img src="images/icon-suvs.svg"/>
+        <h2>SUVS</h2>
+        <p>
+          Take an SUV for its spacious interior,polish and versatility. Perfect
+          for your next family vacation and off-road adventures
+        </p>
+        <button class="b2">Learn More</button>
+      </div>
+      <div class="green">
+      <img src="images/icon-luxury.svg"/>
+        <h2>LUXURY</h2>
+        <p>
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <button class="b3">Learn More</button>
+      </div>
+    </main>
+  </body>
+</html>

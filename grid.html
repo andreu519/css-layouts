@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gridbox Layout</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(1, 31, 31);
+        display: flex;
+        height: 100vh;
+        place-items: center;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "a a b"
+          'c d d'
+          'c e e';
+        gap: 10px;
+        margin: auto;
+        min-width: 50%;
+      }
+      .grid-container div {
+        padding: 2em;
+        text-align: center;
+      }
+      .box-a {
+          width:auto;
+          height:120px;
+        background-color: hsl(16, 100%, 50%);
+        grid-area: a;
+      }
+      .box-b {
+          width:auto;
+        background-color: hsl(54, 96%, 52%);
+        grid-area: b;
+        
+      }
+      .box-c {
+          height:200px;
+          width:auto;
+        background-color: hsl(120, 94%, 34%);
+        grid-area: c;
+        grid-row: c/d/e;
+        
+      }
+      .box-d {
+        height:auto;
+        width:auto;
+        background-color: hsl(199, 93%, 49%);
+        grid-area: d;
+      }
+      .box-e {
+          height:auto;
+          width:auto;
+        background-color: hsl(199, 93%, 49%);
+        grid-area: e;
+      }
+    </style>
+  </head>
+  <body>
+    
+        <div class="grid-container">
+      <div class="box-a"></div>
+      <div class="box-b"></div>
+      <div class="box-c"></div>
+      <div class="box-d"></div>
+      <div class="box-e"></div>
+      </div>
+    
+  </body>
+</html>
